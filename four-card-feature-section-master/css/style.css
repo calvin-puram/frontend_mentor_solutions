@@ -1,0 +1,130 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.5rem;
+  line-height: 1.5;
+  background-color: hsl(0, 0%, 98%);
+  font-family: 'Poppins', sans-serif;
+}
+
+#header {
+  width: 50%;
+  margin: 6rem auto;
+  text-align: center;
+}
+
+#header h1 {
+  font-weight: 200;
+}
+
+.header--text {
+  display: block;
+  font-weight: 600;
+}
+
+.header__content h3 {
+  font-weight: 200;
+  font-size: 1.5rem;
+  margin-top: 2rem;
+}
+
+main {
+  width: 80%;
+  margin: 20rem auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+}
+
+.card {
+  background: #fff;
+  width: 33rem;
+  margin: 1.3rem;
+  max-height: 30rem;
+  padding: 1rem 3rem;
+  border-radius: 7px;
+  box-shadow: 2px 7px 4px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  position: relative;
+}
+
+.card::after {
+  content: '';
+  width: 100%;
+  height: 5px;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.card__karma::after {
+
+  background: hsl(34, 97%, 64%);
+}
+
+.card__cal::after {
+  background: hsl(212, 86%, 64%);
+}
+
+.card__team::after {
+  background: hsl(0, 78%, 62%);
+}
+
+.card__supervisor::after {
+  background: hsl(180, 62%, 55%);
+}
+
+.card__header {
+  margin-top: 4rem;
+}
+
+.lead {
+  font-weight: 200;
+  margin: 1.5rem 0;
+}
+
+.header__img {
+  margin-top: 4rem;
+  float: right;
+
+}
+
+.card__transform--first {
+  transform: translateY(-50%);
+}
+
+.card__transform--second {
+  transform: translateY(-50%);
+}
+
+@media screen and (max-width:500px) {
+  html {
+    font-size: 50%;
+  }
+
+  #header h1 {
+    font-size: 1.8rem;
+  }
+
+  main {
+    margin: 2rem auto;
+  }
+
+  .card__transform--first {
+    transform: translateY(0);
+  }
+
+  .card__transform--second {
+    transform: translateY(0);
+  }
+}
