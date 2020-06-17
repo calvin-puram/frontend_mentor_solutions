@@ -1,0 +1,156 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: 'Open sans', sans-serif;
+  line-height: 1.5;
+  background: url('/images/bg-desktop.svg') no-repeat center center;
+  background-size: cover;
+  background-color: hsl(257, 40%, 49%);
+  width: 80%;
+  margin: auto;
+}
+
+img {
+  width: 100%;
+}
+
+#header {
+  display: flex;
+  justify-content: flex-start;
+  width: 300px;
+  margin: 4rem 0;
+}
+
+.main__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+#community {
+  display: flex;
+  color: #fff;
+}
+
+#community>div:first-child {
+  margin-right: 2rem;
+}
+
+#community>div:last-child {
+  margin-left: 2rem;
+}
+
+.community__header {
+  font-size: 4rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+
+.community__lead {
+  font-weight: 400;
+  font-size: 1.6rem;
+  opacity: .9;
+  margin-bottom: 2rem;
+}
+
+.btn {
+  padding: 1.5rem 7rem;
+  border-radius: 30px;
+  outline: none;
+  box-shadow: rgb(51, 51, 51) 2px 2px 10px 2px;
+  color: hsl(257, 40%, 49%);
+  border: none;
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+
+.btn::hover {
+  background-color: hsl(257, 92%, 49%);
+}
+
+.community_showcase {
+  flex: 1.5;
+}
+
+.community__content {
+  flex: 1;
+}
+
+.socials {
+  display: flex;
+  justify-content: flex-end;
+  margin: 3rem 0;
+
+}
+
+.social__list {
+  display: flex;
+  list-style: none;
+  align-items: center;
+}
+
+.social__item {
+  border: 1px solid #fff;
+  margin: .7rem;
+  border-radius: 50%;
+}
+
+.fab {
+  color: #fff;
+  font-size: 15px;
+  text-align: center;
+  padding: 8px;
+}
+
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 59%;
+  }
+
+  #header {
+    width: 120px;
+    margin: 2.5rem 0 4.5rem 0;
+  }
+
+  .main__container {
+    display: block;
+  }
+
+  #community {
+    flex-direction: column;
+  }
+
+  .community__content {
+    text-align: center;
+    margin-top: 4rem;
+  }
+
+  .community__header {
+    font-size: 2.5rem;
+  }
+
+  .btn {
+    margin-top: 1rem;
+    padding: 1.5rem 8rem;
+  }
+
+  .socials {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 8rem 0 2rem 0;
+
+  }
+}
