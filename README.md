@@ -31,3 +31,13 @@ A collection of my submission for frontend mentor challenges
 **Mobile View**
 
 ![second project](img/project_3b.png)
+
+4. Complete Huddle Landing Page
+
+**Desktop View**
+
+![first project](img/project_4a.png)
+
+**Mobile View**
+
+![second project](img/project_4b.png)
