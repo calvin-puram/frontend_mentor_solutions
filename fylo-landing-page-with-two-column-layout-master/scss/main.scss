@@ -1,0 +1,604 @@
+@import 'reset';
+@import 'utilities';
+
+.header {
+  margin: 3.5rem auto;
+
+  &__top {
+    @include flex;
+  }
+
+  &__logo {
+    width: 90px;
+  }
+
+  &__list__group {
+    display: flex;
+    align-items: center;
+  }
+
+  &__list__item {
+    margin: 0 2.5rem;
+
+    .nav__link {
+      color: #333;
+      font-weight: 100;
+      font-size: 2rem;
+
+      &:hover {
+        color: darken(#333, 100%);
+        font-weight: 400;
+      }
+    }
+  }
+}
+
+.showcase {
+  @include flex;
+  height: 80vh;
+
+  &__content {
+    flex: 1
+  }
+
+  &__header {
+    font-size: 4rem;
+    line-height: 1.2;
+    margin-bottom: 2rem;
+    margin-top: -7rem;
+  }
+
+  &__lead {
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    font-weight: 700;
+  }
+
+  &__form {
+    margin-top: 1rem;
+
+    .form__control {
+      padding: 1.1rem 1.4rem;
+      width: 320px;
+      border: 1px solid rgb(124, 124, 124);
+
+      &::placeholder {
+        opacity: .8;
+      }
+    }
+  }
+
+  &__image {
+    margin-left: 6rem;
+    flex: 1.3;
+  }
+}
+
+.productive {
+  background: url('../../images/bg-curve-desktop.svg') no-repeat center center;
+  background-size: cover;
+  height: 85vh;
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+  }
+
+  &__content {
+    .img-arrow {
+      width: 20px;
+      margin-bottom: -.5rem;
+    }
+
+    .img-quote {
+      width: 15px;
+    }
+
+    .img-testimonial {
+      width: 50px;
+      border-radius: 50%;
+    }
+
+    .link {
+      color: hsl(170, 45%, 43%);
+      border-bottom: 1px solid hsl(170, 45%, 43%);
+      font-size: 1.8rem;
+      padding-bottom: .3rem;
+    }
+  }
+
+  &__header {
+    font-size: 4rem;
+    margin-bottom: 2rem;
+    font-weight: 600;
+  }
+
+  &__para {
+    font-size: 1.8rem;
+    font-weight: 400;
+    margin-right: 25rem;
+  }
+
+  .para--2 {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .testimonial__details {
+    background-color: #fff;
+    width: 40%;
+    margin-top: 4rem;
+    padding: 2rem 3rem;
+    font-size: 1.5rem;
+    font-weight: 100;
+    box-shadow: 2px 4px 5px rgba(0, 0, 0, .3);
+    border-radius: 7px;
+
+    .para {
+      margin: 1.5rem 0;
+    }
+
+    .person__details {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+
+      .details {
+        margin-left: .8rem;
+
+        &>p:first-child {
+          font-weight: 600;
+        }
+      }
+    }
+  }
+
+  &--image {
+    width: 60%;
+  }
+}
+
+.cta {
+  background: hsl(238, 22%, 44%);
+  color: #fff;
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 40vh;
+  }
+
+  &__header {
+    font-size: 3rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+  }
+
+  &__content,
+  &__email {
+    flex: 1;
+  }
+
+  &__content {
+    margin-right: 10rem;
+  }
+
+  &__email {
+    .form {
+      margin-left: 10rem;
+
+      .form__group {
+        margin-bottom: .8rem;
+
+        .form__control {
+          padding: .8rem 1.4rem;
+          width: 400px;
+          border: 1px solid rgb(124, 124, 124);
+        }
+      }
+    }
+  }
+}
+
+.footer {
+  background: hsl(243, 87%, 12%);
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40vh;
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__address {
+    line-height: 2;
+    margin-top: -4rem;
+
+    .footer--logo {
+      width: 80px;
+    }
+
+    .footer--phone,
+    .footer--email {
+      width: 15px;
+    }
+
+    .address__phone,
+    .address__email {
+      display: flex;
+      align-items: center;
+    }
+
+    .address__phone__no,
+    .address__email__address {
+      margin-left: 1rem;
+    }
+  }
+
+  &__about,
+  &__career {
+    line-height: 1.7;
+    margin-bottom: -10rem;
+
+    a {
+      color: #fff;
+    }
+  }
+
+  &__icons {
+    .footer-list__container {
+      display: flex;
+      margin: 0 15rem 0 0;
+
+      .footer-list__icons {
+        border: 2px solid #fff;
+        border-radius: 50%;
+        margin: 0 .5rem;
+
+
+        .fab {
+          padding: 10px;
+          color: #fff;
+          font-size: 2.5rem;
+          text-align: center;
+        }
+
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .showcase {
+    height: 40vh;
+
+    &__header {
+      font-size: 3rem;
+      margin-bottom: 2rem;
+      margin-top: 0rem;
+    }
+
+    &__lead {
+      font-weight: 100;
+    }
+
+    &__form {
+      .form__control {
+        width: 200px;
+      }
+    }
+  }
+
+  .productive {
+    height: 80vh;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .showcase {
+    flex-direction: column;
+    height: 100vh;
+
+    &__header {
+      font-size: 4.5rem;
+      text-align: center;
+    }
+
+    &__lead {
+      margin-bottom: 4rem;
+      font-size: 3rem;
+      font-weight: 400;
+      text-align: center;
+    }
+
+    &__content {
+      flex: 1;
+      order: 2;
+    }
+
+    &__image {
+      flex: 1;
+      order: 1;
+      margin-left: 0;
+      margin-bottom: 0;
+    }
+
+    &__form {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      .form__control {
+        width: 500px;
+        padding: 1.8rem 1.4rem;
+      }
+    }
+  }
+
+  .productive {
+    background: url('../../images/bg-curve-mobile.svg')no-repeat bottom;
+    background-size: cover;
+    height: auto;
+
+    &__wrapper {
+      flex-direction: column;
+    }
+
+    &__content {
+      margin: 4rem 0;
+      order: 2;
+      flex: 1;
+
+      .link {
+        display: inline-block;
+        margin: 4rem 0 0 19rem;
+        font-size: 2.5rem;
+
+      }
+
+      .img-arrow {
+        width: 25px;
+      }
+    }
+
+    &__header {
+      font-size: 4rem;
+      text-align: center;
+      font-weight: 400;
+    }
+
+    &__para {
+      font-size: 2.5rem;
+      font-weight: 400;
+      margin-right: 0rem;
+    }
+
+    .testimonial__details {
+      width: 80%;
+      margin: 6rem auto;
+      padding: 5rem 3rem;
+      font-size: 1.7rem;
+      line-height: 1.6;
+
+
+    }
+
+    &__image {
+      order: 1;
+      flex: 1;
+      margin-left: 0;
+    }
+  }
+
+  .cta {
+    height: 50vh;
+    padding: 4rem 0;
+
+    &__wrapper {
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    &__content {
+      margin-right: 0rem;
+      text-align: center;
+      padding: 2rem 10rem;
+
+      .para {
+        font-size: 2.5rem;
+        font-weight: 400;
+      }
+    }
+
+    &__header {
+      font-size: 4rem;
+    }
+
+    &__email {
+      margin-top: 2rem;
+
+      .form {
+        margin-left: 0;
+
+        .form__group {
+          margin-bottom: 1.5rem;
+
+          .form__control {
+            padding: 1.5rem 1.4rem;
+          }
+        }
+      }
+    }
+  }
+
+  .footer {
+    display: block;
+    height: 60vh;
+
+    &__wrapper {
+      flex-direction: column;
+    }
+
+    &__address {
+      line-height: 2;
+      margin: 2rem 0;
+      font-size: 3rem;
+
+      .footer--logo {
+        width: 100px;
+      }
+
+      .footer--phone,
+      .footer--email {
+        width: 25px;
+      }
+
+
+    }
+
+    &__about,
+    &__career {
+      margin: 1rem 0;
+
+      a {
+        font-size: 2.5rem;
+      }
+    }
+
+    &__icons {
+      .footer-list__container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin: 0;
+      }
+    }
+
+
+  }
+
+}
+
+@media screen and (max-width: 600px) {
+  html {
+    font-size: 50%;
+  }
+
+  .header {
+    &__list__item {
+      margin: 0 1rem;
+    }
+  }
+
+  .showcase {
+    height: auto;
+
+    &__header {
+      font-size: 3rem;
+      padding: 1rem 3rem;
+    }
+
+    &__content {
+      padding: 3rem 0;
+    }
+
+    &__lead {
+      margin-bottom: 4rem;
+      font-size: 1.6rem;
+      padding: 1rem 6rem;
+    }
+
+    &__form {
+
+
+      .form__control {
+        width: 200px;
+        padding: 1.3rem 1.4rem;
+      }
+    }
+  }
+
+  .productive {
+
+    &__content {
+      .link {
+        margin: 1rem 0 0 14rem;
+        font-size: 1.7rem;
+      }
+    }
+
+    &__header {
+      font-size: 3rem;
+    }
+
+    &__para {
+      font-size: 1.6rem;
+    }
+  }
+
+  .cta {
+    height: 50vh;
+    padding: 4rem 0;
+
+    &__content {
+      padding: 5rem 5rem 0 5rem;
+
+      .para {
+        font-size: 1.6rem;
+      }
+    }
+
+    &__header {
+      font-size: 3rem;
+    }
+
+    &__email {
+      margin-bottom: 0;
+
+      .form {
+        margin-left: 0;
+
+        .form__group {
+          margin-bottom: 1rem;
+
+          .form__control {
+            padding: 1.3rem 1.4rem;
+            width: 200px;
+          }
+        }
+      }
+    }
+  }
+
+  .footer {
+    height: auto;
+
+    &__address {
+      font-size: 2rem;
+      padding-top: 2rem;
+    }
+
+    &__about,
+    &__career {
+      a {
+        font-size: 1.8rem;
+      }
+    }
+
+    &__icons {
+      .footer-list__container {
+        padding: 4rem 0;
+      }
+    }
+
+  }
+
+}
