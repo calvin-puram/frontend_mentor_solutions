@@ -42,7 +42,7 @@ A collection of my submission for frontend mentor challenges
 
 ![second project](img/project_4b.png)
 
-4. Complete Huddle Landing Page 2
+5. Complete Huddle Landing Page 2 (scss)
 
 **Desktop View**
 
