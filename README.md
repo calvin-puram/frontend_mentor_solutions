@@ -51,3 +51,13 @@ A collection of my submission for frontend mentor challenges
 **Mobile View**
 
 ![second project](img/project_5b.png)
+
+6. Complete Easy Bank Landing Page (scss)
+
+**Desktop View**
+
+![first project](img/project_6a.png)
+
+**Mobile View**
+
+![second project](img/project_6b.png)
